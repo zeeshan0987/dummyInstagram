@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-body{
+  width: 485px;
+  height: auto;
+}
+.head{
+  display:flex ;
+  align-items: center;
+ 
+  gap: 12px;
+}
+
+.card-logo{
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  gap: 12px;
+}
+.card-img{
+  border-radius: 100%;
+}
+.card{
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.logo-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.logo-1{
+  display: flex;
+  gap: 5px;
+}
+.input input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  height: 1rem;
+}
+.line{
+  width: 100%;
+  margin-top: 12px;
+  border: 0.5px solid rgba(0, 0, 0, 0.745);
+}
+.post{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.link a{
+  color: black;
+  font-size: 25px;
+}
+/* navbar css */
+header{
+  width: 100vw;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-size: large;
+
+}
+.navbar li{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.like{
+  color: red;
+}
+.navbar1{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-left: 15px;
+}
+.navbar1 li{
+  display: flex;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu{
+  display: none;
+}
+
+/* modal? css */
+
+.modalback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.375);
+}
+.modalcontant {
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  padding: 23px;
+  border-radius: 5px;
+}
+.modalheader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.modalBody {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-post{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+.input-post input{
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+}
+.pro{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pro1{
+  display: flex;
+  align-items: center;
+  gap: 5px;margin: 10px;
+}
+.modal{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.btn{
+  padding: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgb(186, 183, 183);
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar li {
+    display: none;
+  }
+  #body{
+    width: 100vw;
+    padding: 10px;
+  }
+  .menu{
+    display: inline;
+  }
+  .card-body{
+    width: 100%;
+  }
+  .pro{
+    display: none;
+  }
+}
